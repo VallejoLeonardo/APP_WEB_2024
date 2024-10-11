@@ -1,0 +1,103 @@
+body {
+    background-image: url('fondo.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form {
+    background-color: rgba(231, 222, 222, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: normal
+    pad;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#resultado {
+    background-color: rgba(231, 222, 222, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    max-width: 900px;
+    margin-top: 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    text-align: center;
+}
+
+.inp {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 250px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(197, 194, 194);
+}
+
+#boton {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 250px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 720px) {
+    form, #resultado {
+        margin-left: 300px;
+        margin-right: 300px;
+
+    }
+
+    input, select, .inp, #boton {
+        width: 30%;
+    }
+}
+
+#tipo.inp, #n1.inp, #n2.inp{
+    font-size: 15px;
+    text-align: center;
+}
+

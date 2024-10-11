@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="calculadora.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Calculos JS</title>
+</head>
+<body>
+    <h2>.:Calculadora Básica:.</h2>
+    <hr>
+    <form>
+        <label class="inp" for="resultado">Tipo de operacion:</label>
+        <select id="tipo" class="inp">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="*">Multiplicacion</option>
+            <option value="/">Division</option>
+        </select><br>
+        <label class="inp" for="n1">Numero1:</label>
+        <input class="inp" type="number" id="n1" autofocus><br>
+        <label class="inp" for="n2">Numero2:</label>
+        <input class="inp" type="number" id="n2"><br>
+        </select><br>
+        <input type="button" value="Calcular" id="boton" onclick="operaciones()">
+    </form>
+    <hr>    
+    <div id="resultado"></div>
+</body>
+</html>
