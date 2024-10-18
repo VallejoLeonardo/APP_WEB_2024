@@ -18,6 +18,7 @@ function operaciones(){
     else {
         let respuesta = document.getElementById("resultado");
         respuesta.innerHTML = `<h3>Ingresa solo números</h3>`;
+        alert("Ingresa solo números");
     }
 }
 

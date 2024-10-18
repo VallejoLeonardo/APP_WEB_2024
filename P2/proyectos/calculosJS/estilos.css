@@ -5,7 +5,6 @@ body {
 }
 
 form {
-    background-color: rgba(231, 222, 222, 0.5);
     padding: 20px;
     border-radius: 10px;
     margin: 10px auto;
@@ -17,9 +16,11 @@ h2 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 80px;
+    font-size: 10vh ;
     font-weight: normal
     pad;
+    padding:0;
+    margin:2vh;
 }
 
 input {
@@ -33,15 +34,13 @@ input {
 }
 
 #resultado {
-    background-color: rgba(231, 222, 222, 0.5);
-    padding: 20px;
+    padding: 2vh;
     border-radius: 10px;
-    margin: 20px auto;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    max-width: 900px;
-    margin-top: 0;
+    font-size: auto;
+    text-align: center;
+    
 }
 
 select {
@@ -55,49 +54,74 @@ select {
 }
 
 label {
-    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-size: auto;
+    text-align: left;
 }
 
 .inp {
     width: 100%;
     padding: 5px;
-    margin: 10px 250px;
+    margin: 5px auto;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
     color: black;
     background-color: rgb(197, 194, 194);
+    display: block
 }
 
 #boton {
     width: 100%;
     padding: 10px;
-    margin: 10px 250px;
+    margin: 10px auto;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
-    font-size: 20px;
+    font-size: auto;
+    display: block;
 }
 
 /* Media Queries */
-@media (min-width: 720px) {
+@media (min-width: 365px) {
     form, #resultado {
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 10vh;
+        margin-right: 10vh;
 
     }
-
-    input, select, .inp, #boton {
-        width: 30%;
+    input, select, .inp, #boton, label {
+        width: 40%;
+        padding: 2vh;
+        margin-top: 0;
     }
 }
-
 #tipo.inp, #n1.inp, #n2.inp{
-    font-size: 15px;
+    font-size: auto;
     text-align: center;
 }
 
+#boton:active{
+    background-color: red;
+}
+
+a {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}

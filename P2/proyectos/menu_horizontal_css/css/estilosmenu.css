@@ -1,0 +1,92 @@
+/* Estilos aplicados para crear el menu horizontal en CSS */
+#index{
+    background-color: silver;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 6vmin;
+    color: white;
+}
+
+header{
+    width: 100%;
+    background: cadetblue;
+    position: sticky;
+    top: 0;
+    height: auto;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+
+}
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    padding: 10px;
+    border-right: solid 1px white;
+}
+
+header label:hover{
+    cursor: pointer;
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    background-color: cadetblue;
+}
+
+#menu li{
+    flex-grow: 1;
+    text-align: center;
+    border: solid 1px white;
+}
+
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+    display: block;
+}
+#menu li a:hover{
+    background-color: rgba(0, 0, 0, 0.43);
+}
+
+/*estilos con mediaquery para que el menu se oculte ys sea despegable*/
+
+@media screen and (max-width: 768px){
+    header label{
+        display: block;
+    }
+  
+    #menu{
+        position: absolute;
+        background-color: cadetblue;
+        width: 30%;
+        margin-left:-70% ;
+        transition: all 0.5s;
+    }
+    #menu ul{
+        flex-direction: column;
+    }
+    #menu li{
+        text-align: left;
+        border: 1px solid white;
+    }
+    #btn-menu:checked ~ #menu{
+        margin-left: 0;
+        
+    }
+    
+}
