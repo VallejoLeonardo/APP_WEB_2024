@@ -1,81 +1,17 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-#main{
-    font-size: 50px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#sobremi  {
-    display: flex;
-    align-items: center;
-
-    width: 80%;
-    padding: 2rem;
-    margin: 10px auto;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#sobremi img {
-    display: inline;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    margin-right: 2rem;
-    box-shadow: 10px 0  100px rgba(17, 42, 232, 0.867);
-}
-
-#sobremi img:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease-in-out;
-    border-radius: 25%;
-
-}
-
-
-#boton{
-    margin: 0 auto;
-    padding: 20px 30px;
-    background-color:blue;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-}
-
-#sobremi p{
-    font-size: 3vh;
-    text-align: justify;
-    padding: 10px;
-    margin-left:2vw ;
-}
-
-#sobremi footer{
-    font-size: 3vh;
-    padding: 10px;
-}
-
-
-/* Aplicar estilos a la seccion "sobremi" */
+/* Aplicar estilos generales  */
 body{
     margin: 0;
     padding: 0;
-}
-header{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Aplicar los estilos del Header */
+
 #inicio{
-    background-image: url(..//img/fondo1.jpg);
-    background-size: cover;
+    background-image: url(../img/fondo1.jpg);
     height: 100vmin;
+    background-size: cover;
 }
 
 .contenedor{
@@ -100,31 +36,36 @@ header{
 
 .lista{
     display: flex;
-    list-style: none;
-    font-size: 1vw;
+    list-style-type: none;
+    font-size: 1.5vw;
 }
 
 .lista li{
-    margin-right: 1.5vmin;
+    margin-left: 1.5vw;
     justify-content: center;
 }
 
 .btn-menu{
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
 }
 
 .btn-menu:hover{
-    color:white;
-    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.6vw;
+    border: 1px solid black;
     text-decoration: underline;
-    border: 1px solid slver
+}
+
+.btn-menu:active{
+    color: #f0ea328a;
 }
 
 .titular{
-    margin-top: 18rem;
+    margin-top: 12rem;
     text-align: center;
 }
 
@@ -135,16 +76,15 @@ header{
 
 .titular h2{
     font-size: 2.5vw;
-    margin: 3.5vw;
+    margin-bottom: 4vw;
 }
 
 .btn{
-    background-color: rgb(59, 103, 125);
+    background-color: #5db8f8;
     padding: 2vw;
     font-size: 1vw;
     color: white;
     text-decoration: none;
-    border-radius: 2vw;
 }
 
 .btn:hover{
@@ -152,12 +92,126 @@ header{
 }
 
 .btn:active{
-    background-color: #d8f30933;
+    background-color: #f0ea328a;
     color: black;
 }
+
+/* Aplicar estilos a la seccion "sobremi" */
+.contenedor h3{
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor-sobremi img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px #5db8f8 ;
+    width: 40vw;
+
+}
+
+.contenedor-sobremi img:hover{
+    border-radius: 20%;
+}
+
+.contenedor-parrafo-y-boton{
+    width: 45%;
+}
+
+.contenedor-parrafo-y-boton p{
+    font-size: 1.5vw;
+    color: black;
+    text-align: justify;
+    margin-bottom: 2rem;
+
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.email{
+    color: blue;
+    text-decoration: underline;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.email:hover{
+    color: #5db8f8;
+    font-size: 2.1vw;
+    font-weight: normal;
+}
+
+.email:active{
+    color: #5db8f8;
+}
+
+
+
+/* APLICAR ESTILOS A LA SECCION "SERVICIOS" */
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 23%;
+    padding: 2vw;
+    border-radius: 20%;
+    /* border: 1px solid black; */
+    margin-bottom: 2vw;
+    color: white;
+}
+
+.servicio p{
+    font-size: 2.5vmin;
+}
+
+.servicio h4{
+    font-size: 3vmin;
+}
+
+.azul{
+    background-color: cornflowerblue;
+}
+
+.celeste{
+    background-color: #5db8f8;
+}
+
 /* Aplicar estilos a el atributo class */
 
+[class^="icon-"]{
+    font-size:5vmin;
+    float: right;
+}
+
+.icon-arrow-up{
+    color: #5db8f8;
+    margin-left: 2rem;
+    float: left;
+    text-decoration: none;
+    font-size: 5vmin;
+}
 
 
 /* Aplicar estilos al pie */
 
+.burbujas{
+    text-align: center;
+}
+
+.burbujaall img{
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.burbujas p{
+    font-size: 1.5vw;
+}
