@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            {% comment %} aqui va el bloque de titulo {% endcomment %}
+        {% endblock title %}
+    </title>
+</head>
+<body>
+    <h1 id=titulo>E_RAPIDA1</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'vision' %}">Vision</a></li>
+            <li><a href="{% url 'mision' %}">Mision</a></li>
+            <li><a href="{% url 'acercade' %}">Acerca de nosotros</a></li>
+        </ul>
+    </nav>
+    {% block content %}
+        {% comment %} aqui va el bloque de contenido {% endcomment %}
+    {% endblock content %}
+    <style>
