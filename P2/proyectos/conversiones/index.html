@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="calculadora.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <title>CONVERSIONES</title>
+</head>
+<body>
+    <h2>.:Calculadora de Divisas:.</h2>
+    <p><a href="../index.html">Pagina de inicio</a></p>
+    <hr>
+    <form>
+        <label for="tipo">Tipo de conversión:</label>
+        <select id="tipo" class="inp">
+            <option value="pesos">Pesos a Dólares</option>
+            <option value="dolares">Dólares a Pesos</option>
+            <option value="euros">Euros a Dólares</option>
+            <option value="Dolares">Dólares a Euros</option>
+        </select><br>
+        <label for="cantidad">Cantidad:</label>
+        <input class="inp" type="number" id="cantidad" autofocus><br>
+        <input type="button" value="Convertir" id="boton" onclick="convertir()">
+    </form>
+    <hr>    
+    <div id="resultado"></div>
+</body>
+</html>

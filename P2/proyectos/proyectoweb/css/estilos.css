@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /* Aplicar estilos generales  */
 body{
     margin: 0;
@@ -205,6 +205,7 @@ body{
 
 .burbujas{
     text-align: center;
+    margin: 5vw; 
 }
 
 .burbujaall img{
@@ -215,3 +216,104 @@ body{
 .burbujas p{
     font-size: 1.5vw;
 }
+
+.formu{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.formu h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.formu p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.formu a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.formu a i{
+    color: #5db8f8;
+    margin-right: 10px;
+}
+.formu .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.formu textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.formu .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #5db8f8;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.formu .btn-enviar:hover{
+    background: #5db8f8;
+}
+
+.contenedor h1 {
+    margin: 0;
+}
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post h2 {
+    color: #333;
+}
+.post p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.proyecto {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.proyecto h2 {
+    color: #333;
+}
+.proyecto p {
+    color: #666;
+    line-height: 1.6;
+}
+.proyecto a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.proyecto a:hover {
+    text-decoration: underline;
+}
+

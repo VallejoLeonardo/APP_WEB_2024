@@ -1,0 +1,127 @@
+body {
+    background-image: url('fondo.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10vh ;
+    font-weight: normal
+    pad;
+    padding:0;
+    margin:2vh;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#resultado {
+    padding: 2vh;
+    border-radius: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+    text-align: center;
+    
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-size: auto;
+    text-align: left;
+}
+
+.inp {
+    width: 100%;
+    padding: 5px;
+    margin: 5px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(197, 194, 194);
+    display: block
+}
+
+#boton {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: auto;
+    display: block;
+}
+
+/* Media Queries */
+@media (min-width: 365px) {
+    form, #resultado {
+        margin-left: 10vh;
+        margin-right: 10vh;
+
+    }
+    input, select, .inp, #boton, label {
+        width: 40%;
+        padding: 2vh;
+        margin-top: 0;
+    }
+}
+#tipo.inp, #n1.inp, #n2.inp{
+    font-size: auto;
+    text-align: center;
+}
+
+#boton:active{
+    background-color: red;
+}
+
+a {
+    display: block;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+}
