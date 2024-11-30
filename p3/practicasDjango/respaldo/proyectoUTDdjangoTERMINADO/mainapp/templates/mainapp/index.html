@@ -1,0 +1,32 @@
+{% extends "layouts/layouts.html" %}
+
+{% block title %}
+{{title}}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{title}}</h1>
+    <hr>
+    <p>{{content}}</p>
+
+    {% if messages %}
+        {% for i in messages %}
+            <div class="alert-success">
+                {{i}}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% if user.email %}
+        <br><hr><br>
+        <h2>Bienvenido al sistema {{user.first_name}} {{user.last_name}} </h2>
+        <p>Correo: {{user.email}}</p>
+    {% else %}
+        <br><hr><br>
+        <h2>Por favor inicie sesión</h2>
+        <ul>
+            <li><a href="{% url 'registro' %}">Registrarse</a></li>
+            <li><a href="{% url 'login' %}">Iniciar sesión</a></li>
+    {% endif %}
+
+{% endblock content %}
